@@ -18,6 +18,7 @@ function displayName(username) {
 }
 
 displayName(name);
+console.log("This function takes the user's input and prints either Hello if the user types nothing. The else prints 'Hello' and the user's input")
 // This function takes the user's input and prints either Hello if the user types nothing 
 // The else prints "Hello" and the user's input
 
@@ -29,24 +30,31 @@ function quizGame() {
     let Q1 = prompt("Do I play sports?", "y or n");
     if (Q1.toLowerCase() == 'y' || Q1.toLowerCase() == "yes") {
         alert("Correct"), correctans++;
+        console.log("The user chose y or yes")
     }else{
         alert("wrong!!!!");
+        console.log("The user chose something else");
     }
+    console.log("The user chose y or yes")
 
     let Q2 = prompt("Do I like anime?", "y or n");
 
     if (Q2.toLowerCase() == 'y') {
         alert("Correct"), correctans++;
+        console.log("The user chose y or yes");
     }else{
         alert("wrong!!!!");
+        console.log("The user chose something else");
     }
 
     let Q3 = prompt("Do I not like coffee?", "y or n");
 
     if (Q3.toLowerCase() == 'n' || Q2.toLowerCase == 'no') {
         alert("Correct"), correctans++;
+        console.log("The user chose y or yes");
     }else{
         alert("wrong!!!!");
+        console.log("The user chose something else");
     }
 
 
@@ -55,8 +63,10 @@ function quizGame() {
 
     if (Q4.toLowerCase() == 'y'|| Q1.toLowerCase() == "yes") {
         alert("Correct"), correctans++;
+        console.log("The user chose y or yes");
     }else{
         alert("wrong!!!!");
+        console.log("The user chose something else");
     }
 
 
@@ -65,14 +75,17 @@ function quizGame() {
     
     if (Q5.toLowerCase() == 'n' || Q1.toLowerCase() == "no") {
         alert("Correct"), correctans++;
+        console.log("The user chosed y or yes");
     }else{
         alert("wrong!!!!");
+        console.log("The user chose something else");
     }
     
    
     
 
     alert(`Congrats ${name}. You made a ${correctans}/5`);
+    console.log("End of the quiz");
 }
 
 
