@@ -1,17 +1,24 @@
 body {
 
     background: radial-gradient(circle at center, #FF745E 30%, #F75C43, #0CAB63 100%)
-        /* background: radial-gradient(#FF745E, #90FACB); */
+    
+    
 }
 
 
 
 h1 {
-
     text-align: center;
     border: 1px solid black;
     box-shadow: 10px 5px 5px black;
     border-radius: 15px;
+    font-size: 50px;
+}
+
+h2{
+
+    font-size: 40px;
+
 }
 
 #Hello {
@@ -30,11 +37,14 @@ h1 {
     border: 1px solid black;
     box-shadow: 10px 5px 5px #0CAB63;
     border-radius: 15px;
+    font-size: 40px;
+    
 
 }
 
 p {
     color: #5e1b10;
+    font-size: 20px;
 }
 
 button {
@@ -43,4 +53,14 @@ button {
     left: 30%;
     width: 40%;
     height: 50%;
+}
+
+li {
+
+    font-size: 30px;
+
+}
+
+ol {
+    font-size: 20px;
 }
