@@ -84,7 +84,7 @@ function quizGame() {
 
     console.log("End of the quiz");
 
-    const moreAboutMe = [['captain crunch', 'coco puffs', 'fruitloops', 'cheerios'], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19]]
+    const moreAboutMe = [["cap'n crunch", "cocoa puffs", "fruitloops", "cheerios", "lucky charms", "frosted flakes","raisin bran", "special k", "cinnamon toast crunch", "trix" ], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19]]
     let cereal = prompt("What is my favorite cereal", `${moreAboutMe[0]} are your options`).toLowerCase();
     let trys = 6
     while (trys > 0) {
@@ -92,6 +92,7 @@ function quizGame() {
 
             alert("You're incorrect. Try again"), trys--;
             break;
+
         } else {
             alert("You got it!!!"), trys--;
             break;
