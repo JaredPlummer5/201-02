@@ -82,19 +82,18 @@ function quizGame() {
 
 
 
-    console.log("End of the quiz");
+    
 
     const moreAboutMe = [["cap'n crunch", "cocoa puffs", "fruitloops", "cheerios", "lucky charms", "frosted flakes","raisin bran", "special k", "cinnamon toast crunch", "trix" ], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19]]
     let cereal = prompt("What is my favorite cereal", `${moreAboutMe[0]} are your options`).toLowerCase();
     let trys = 6
     while (trys > 0) {
         if (cereal != moreAboutMe[0][0] && cereal != moreAboutMe[0][1] && cereal != moreAboutMe[0][3]) {
-
             alert("You're incorrect. Try again"), trys--;
-            break;
+            prompt("What is my favorite cereal", `${moreAboutMe[0]} are your options`).toLowerCase();
 
         } else {
-            alert("You got it!!!"), trys--;
+            alert("You got it!!!"), trys--; correctans++;
             break;
         }
     }
@@ -105,35 +104,42 @@ function quizGame() {
 
         if (age > moreAboutMe[1][16]) {
 
+            
             alert("You're too high"), trys--;
+            age = prompt("How old am I?", `${moreAboutMe[1]} are your options`);
 
-            break;
+
 
         } else if (age < moreAboutMe[1][16]) {
 
-            alert("You're too low"), trys--;
+            alert("You're too low"), trys--; 
+            age = prompt("How old am I?", `${moreAboutMe[1]} are your options`);
 
-            break;
+            
         } else if (age == moreAboutMe[1][16]) {
 
             alert("You're correct"), trys--, correctans++;
+            age = prompt("How old am I?", `${moreAboutMe[1]} are your options`);
 
-            break;
+            
         } else if (age != moreAboutMe[1][16]) {
+            age = prompt("How old am I?", `${moreAboutMe[1]} are your options`);
 
             let x = moreAboutMe.push(age)
             console.log(x)
-            break;
+            
         } else {
+            age = prompt("How old am I?", `${moreAboutMe[1]} are your options`);
+
             alert("Error")
-            break;
+            
         }
 
 
     }
     alert(`Congrats ${name}. You made a ${correctans}/7`);
 
-
+    console.log("End of the quiz");
 }
 
 
