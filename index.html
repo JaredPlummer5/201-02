@@ -13,16 +13,150 @@
 
     <h1>Welcome to my quiz</h1>
     <h2 id="Hello"></h2>
-<!-- 
-    <div class="MsPrompt">
-        <div class="MsPrompt-content">
-            <button id="question1" onclick="MakeShift()"></button>
-            <button id="question2" onclick="MakeShift()"></button>
-            <button id="question3" onclick="MakeShift()"></button>
-            <button id="question4" onclick="MakeShift()"></button>
-            <button id="question5" onclick="MakeShift()"></button>
+    <button onclick="MakeShift()" id="TakeQuiz2">Take quiz</button>
+    <div class = "greyedBackground">
+        <div id="MsPrompt" class="MsPrompt">
+
+            <div class="MsPrompt-content">
+                <h3>
+                    Quiz
+                </h3>
+                <div id="ButtonQuestion">
+                    <button id="question1" onclick="QuizGameQ1()"><span>Q1</span></button>
+                    <button id="question2" onclick="QuizGameQ2()"><span>Q2</span></button>
+                    <button id="question3" onclick="QuizGameQ3()"><span>Q3</span></button>
+                    <button id="question4" onclick="QuizGameQ4()"><span>Q4</span></button>
+                    <button id="question5" onclick="QuizGameQ5()"><span>Q5</span></button>
+                    <button id="question6" onclick="QuizGameQ6()"><span>Q6</span></button>
+                    <button id="question7" onclick="QuizGameQ7()"><span>Q7</span></button>
+                </div>
+                <div id="PromptQuestions">
+                    <div id="Question1">
+
+                        Do I play sports?
+
+                        <div class="choices">
+                            <button class="Yes">Yes</button>
+                            <button class="No">No</button>
+                        </div>
+
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ2()" id="nextQuestion" class="next">Next &raquo;</button>
+                        </div>
+
+
+                    </div>
+
+                    <div id="Question2">
+
+                        Do I like anime?
+                        <div class="choices">
+                            <button class="Yes">Yes</button>
+                            <button class="No">No</button>
+                        </div>
+
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ1()" id="lastQuestion" class="previous">Previous &laquo; </button>
+                            <button onclick="QuizGameQ3()" id="nextQuestion" class="next">Next &raquo;</button>
+                        </div>
+
+                    </div>
+
+                    <div id="Question3">
+
+                        Do I not like coffee?
+                        <div class="choices">
+                            <button class="Yes">Yes</button>
+                            <button class="No">No</button>
+                        </div>
+
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ2()" id="lastQuestion" class="previous">Previous &laquo; </button>
+                            <button onclick="QuizGameQ4()" id="nextQuestion" class="next">Next &raquo;</button>
+                        </div>
+
+                    </div>
+
+                    <div id="Question4">
+
+                        Do I ever talk to yourself?
+
+                        <div class="choices">
+                            <button class="Yes">Yes</button>
+                            <button class="No">No</button>
+                        </div>
+
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ3()" id="lastQuestion" class="previous">Previous &laquo; </button>
+                            <button onclick="QuizGameQ5()" id="nextQuestion" class="next">Next &raquo;</button>
+                        </div>
+
+
+                    </div>
+
+                    <div id="Question5">
+                        Have I ever told an outrageous lie to a child?
+                        <div class="choices">
+                            <button class="Yes">Yes</button>
+                            <button class="No">No</button>
+                        </div>
+
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ4()" id="lastQuestion" class="previous">Previous &laquo; </button>
+                            <button onclick="QuizGameQ6()" id="nextQuestion" class="next">Next &raquo;</button>
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="Question6">
+
+                        What is my favorite cereal?
+                        <div id = "CheckMarkBoxes">
+                            <input class = "Cereal" type="checkbox">cap'n crunch</input>
+                            <input class = "Cereal" type="checkbox"> cocoa puffs</input>
+                            <input class = "Cereal" type="checkbox">fruitloops</input>
+                            <input class = "Cereal" type="checkbox">cheerios</input>
+                            <input class = "Cereal" type="checkbox">lucky charms</input>
+                            <input class = "Cereal" type="checkbox">frosted flakes</input>
+                            <input class = "Cereal" type="checkbox">raisin bran</input>
+                            <input class = "Cereal" type="checkbox">special k</input>
+                            <input class = "Cereal" type="checkbox">cinnamon toast crunch</input>
+                            <input class = "Cereal" type="checkbox">trix</input>
+                            <button id = "CerealSubmitBtn" onclick="loop6()">Submit</button>
+                        </div>
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ5()" id="lastQuestion" class="previous">Previous &laquo; </button>
+                            <button onclick="QuizGameQ7()" id="nextQuestion" class="next">Next &raquo;</button>
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="Question7">
+
+                        How old am I?
+
+                        <div class="choices">
+                            <input id="inputBox" type="number"></input>
+                            <button id="submitButton" onclick="loop7()">Submit</button>
+                        </div>
+
+                        <div id="LandPbuttons">
+                            <button onclick="QuizGameQ6()" id="lastQuestion" class="previous">Previous &laquo; </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
-    </div> -->
+    </div>
 
 
     <h2 class="sectionTitle">Bio and Education History</h2>
@@ -40,10 +174,10 @@
     <h3>EDUCATION:</h3>
     <h4>
         High School:
-    </h4> 
+    </h4>
 
     <ol>
-    HS Diploma
+        HS Diploma
     </ol>
 
     <h4>
@@ -257,7 +391,7 @@
             Quiz
         </h2>
 
-        <button onClick=quizGame() id="quiz">Take this quiz</button>
+
     </div>
     <script src="script.js"></script>
 </body>

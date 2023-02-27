@@ -4,8 +4,6 @@ body {
     
 }
 
-
-
 h1 {
     text-align: center;
     border: 1px solid black;
@@ -31,14 +29,11 @@ h2{
 }
 
 .sectionTitle {
-
     text-align: center;
     border: 1px solid black;
     box-shadow: 10px 5px 5px #0CAB63;
     border-radius: 15px;
     font-size: 40px;
-    
-
 }
 
 p {
@@ -46,12 +41,21 @@ p {
     font-size: 20px;
 }
 
-button {
 
-    position: relative;
-    left: 30%;
-    width: 40%;
-    height: 50%;
+
+#ButtonQuestion {
+
+    display: flex;
+    justify-content: center;
+    height: 20px;
+
+    
+}
+
+span {
+
+    font-size: 10px;
+
 }
 
 li {
@@ -62,4 +66,239 @@ li {
 
 ol {
     font-size: 20px;
+}
+
+.MsPrompt {
+    
+    display: none;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    
+    /* This sets the position of the element to be absolute, 
+    which means it's positioned relative to its closest 
+    positioned ancestor (or the body element if no ancestor is positioned). */
+
+    top: 50%;
+
+    /* This sets the distance of the top edge of the element 
+    from the top edge of the closest positioned ancestor 
+    to be 50% of the ancestor's height. */
+
+    left: 50%;
+
+    /* This sets the distance of the left edge of the element from the 
+    left edge of the closest positioned ancestor 
+    to be 50% of the ancestor's width. */
+
+    transform: translate(-50%, -50%);
+
+    /* This uses the translate function to move the element up and to the left 
+    by 50% of its own width and height, respectively. 
+    This centers the element in the middle of the ancestor. */
+
+
+    background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%);
+
+    /* This creates a radial gradient background for the element. 
+    The circle keyword indicates that the gradient should be circular, and the at keyword 
+    specifies the position of the center of the gradient. 
+    The two rgb values are the start and end colors of the gradient, 
+    and the percentage values specify where the color stops should be positioned. */
+
+    padding: 20px;
+
+    /* This adds 20 pixels of padding to the inside of the element. */
+
+    box-shadow: 10px 5px 5px black;
+
+    /* This creates a box shadow effect around the element. 
+    The first value is the horizontal offset of the shadow, 
+    the second value is the vertical offset, 
+    the third value is the blur radius,
+    and the fourth value is the color of the shadow. */
+
+    border-radius: 15px;
+
+    /* This sets the border radius of the element to 15 pixels, giving it rounded corners. */
+
+    width: 800px;
+    height: 450px;
+    z-index: 2;
+
+}
+
+#greyedBackground {
+
+    display: none;
+    
+}
+
+
+
+.show2{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    
+}
+
+
+#LandPbuttons{
+    width: 500px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#lastQuestion {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: black;
+    width: max-content;
+    height: max-content;
+    border-radius: 50%;
+}
+
+#nextQuestion {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 50%;
+    width: max-content;
+    height: max-content;
+}
+  
+#lastQuestion:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+#nextQuestion:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    width: 500px;
+    height: 200px;
+}
+
+.choices button{
+    width: 100px;
+    height: 100px;
+}
+
+input[type="checkbox"]:checked {
+    height: 20px;
+    transition: width 1s ease;
+}
+  
+input[type="checkbox"]:checked {
+    width: 30px;
+}
+
+#Question1 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#Question2 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Question3 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Question4 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Question5 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Question6 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Question7 {
+    display: none;
+    border: 1px solid black;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#PromptQuestions{
+    width: 500px;
+    height: 200px;
+}
+
+#CheckMarkBoxes {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 230px;
 }
